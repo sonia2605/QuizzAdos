@@ -1,0 +1,130 @@
+/* elements de base
+la 1ere ligne avec le selecteur universel "*" sauf pour "before et after" */
+*, ::before, ::after {
+    box-sizing: border-box; /* calcul margin et padding des éléments pour donner leur hauteur/ largeur */
+    margin: 0;
+    padding: 0;
+}
+/* margin + padding 0 pour ne pas être embêté avec ceux de base. Ex: liste, body, ... */
+
+body {
+    font-family : 'The Nautigal', cursive ;
+}
+/* suivant ta charte tu auras: 
+font-familiy : 'Roboto', sans sérif;
+Tu retrouves ta police dans ta link preconnect en debut de page html */
+h1 {
+    font-weight: lighter;
+    letter-spacing: 2 em;
+    text-align: center;
+    padding : 20px 0;
+    font-size: 40px; 
+}
+
+h2{
+    font-weight: lighter;
+    letter-spacing : 1.1em;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    color: yellowgreen;
+}
+
+.container-global {
+    width: 70%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.question-block {
+padding: 15px 25px 25px;
+margin: 20px;
+border-radius: 8px;
+box-shadow: 0 5px 15px black;
+}
+
+.question-block h4 {
+    padding : 10px 0;
+    font-size: 22px;
+}
+
+.question-block label {
+    font-size: 15px;
+}
+
+.question-block input[type="radio"]{
+    transform: scale(1.5);
+    margin: 8px;
+}
+
+.résultats {
+    padding: 25px;
+    margin: 10px 0 40px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px black;
+}
+
+.résultats h3 {
+    text-align: center;
+}
+
+.aide {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.note {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+form button {
+    border: none;
+    outline: none;
+    border: 3px solid #333;
+    border-radius: 5px;
+    display: block;
+    margin: 30px auto;
+    padding: 20px 40px;
+    cursor: pointer;
+    font-size: 25px;
+    transition: background-color 0.2s ease-in-out;
+    color: yellowgreen;
+    font-weight: 800;
+}
+
+form button:hover {
+    background-color: lightcyan;
+}
+
+.text {
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.choix {
+    color: yellowgreen;
+    letter-spacing: 1.1em;
+}
+
+.echec {
+    animation: echec 0.3s ease-in-out;
+}
+
+@keyframes echec {
+    0% {
+        transform: translateX(0px);
+    }
+    33% {
+        transform: translateX(5px);
+    }
+    66% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
