@@ -34,6 +34,7 @@ h2{
     width: 70%;
     max-width: 800px;
     margin: 0 auto;
+    height: auto;
 }
 
 .question-block {
@@ -91,7 +92,7 @@ form button {
     cursor: pointer;
     font-size: 25px;
     transition: background-color 0.2s ease-in-out;
-    color: yellowgreen;
+    color: yellowgreen; 
     font-weight: 800;
 }
 
