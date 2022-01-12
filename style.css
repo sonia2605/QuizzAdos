@@ -10,9 +10,7 @@ la 1ere ligne avec le selecteur universel "*" sauf pour "before et after" */
 body {
     font-family : 'The Nautigal', cursive ;
 }
-/* suivant ta charte tu auras: 
-font-familiy : 'Roboto', sans sérif;
-Tu retrouves ta police dans ta link preconnect en debut de page html */
+
 h1 {
     font-weight: lighter;
     letter-spacing: 2 em;
